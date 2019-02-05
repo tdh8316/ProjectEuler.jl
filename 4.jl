@@ -5,10 +5,10 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 Find the largest palindrome made from the product of two 3-digit numbers.
 =#
 
-answer = 6974
+answer = 0
 
-for a = 100:999
-    for b = 100:999
+for a = 999:-1:100
+    for b = 999:-1:100
         ab = a * b
         if ab == parse(Int, reverse(string(ab))) && ab > answer
             global answer = ab
